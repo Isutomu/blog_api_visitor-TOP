@@ -4,7 +4,7 @@ import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import PostPage from "../pages/PostPage/PostPage";
 import SearchResultPage from "../pages/SearchResultPage/SearchResultPage";
 
-const routes = createBrowserRouter([
+const routes = createBrowserRouter({ basename: "/blog_api_visitor-TOP/" }, [
   {
     path: "/",
     element: <HomePage />,
