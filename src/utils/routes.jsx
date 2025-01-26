@@ -4,14 +4,17 @@ import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import PostPage from "../pages/PostPage/PostPage";
 import SearchResultPage from "../pages/SearchResultPage/SearchResultPage";
 
-const routes = createBrowserRouter({ basename: "/blog_api_visitor-TOP/" }, [
-  {
-    path: "/",
-    element: <HomePage />,
-    errorElement: <PageNotFound />,
-  },
-  { path: "/posts/:postId", element: <PostPage /> },
-  { path: "/tags/:tagName", element: <SearchResultPage /> },
-]);
+const routes = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <HomePage />,
+      errorElement: <PageNotFound />,
+    },
+    { path: "/posts/:postId", element: <PostPage /> },
+    { path: "/tags/:tagName", element: <SearchResultPage /> },
+  ],
+  { basename: "/blog_api_visitor-TOP/" }
+);
 
 export default routes;
