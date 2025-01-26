@@ -1,4 +1,5 @@
 import heroParagraphs from "../../assets/heroParagraphs";
+import imageReaper from "../../assets/reaper.avif";
 import styles from "./Hero.module.css";
 
 function Hero() {
@@ -9,11 +10,7 @@ function Hero() {
         <p className={styles.heroParagraph}>{heroParagraphs.paragraph1.text}</p>
         <p className={styles.heroParagraph}>{heroParagraphs.paragraph2.text}</p>
       </div>
-      <img
-        className={styles.heroImage}
-        src="https://ae01.alicdn.com/kf/S8e3683907b9949beb418b9ae97302ce0e.jpg_640x640q90.jpg"
-        alt=""
-      />
+      <img className={styles.heroImage} src={imageReaper} alt="" />
     </header>
   );
 }
