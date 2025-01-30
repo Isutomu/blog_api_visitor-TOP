@@ -53,3 +53,6 @@ There is no particular reason why I chose this project to maintain besides this 
 - Refactor folder structure
   - Not just a simple rearranging, e.g. components are going to be in subfolder of pages (or containers), only being available in a "generic components" folder when they are actually reutilized and not just separated for better readability
 - (Really not a priority) Convert to Typescript
+- Validate form inputs (HTML5)
+- (Not priority) Implement testing (unit testing? integration testing?)
+- (Not really a priority) SEO
