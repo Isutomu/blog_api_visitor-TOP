@@ -35,9 +35,16 @@ body {
 
   min-width: 320px;
   max-width: 60rem;
+  height: 100vh;
 
   margin-right: auto;
   margin-left: auto;
 
   background-color: var(--background);
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  min-height: 100%;
 }

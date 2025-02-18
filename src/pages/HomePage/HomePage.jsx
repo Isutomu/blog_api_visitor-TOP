@@ -4,6 +4,7 @@ import PostsCardsWrapper from "../../components/PostsCardsWrapper/PostsCardsWrap
 import Footer from "../../components/Footer/Footer";
 import usePostData from "../../utils/customHooks/usePostData";
 import styles from "./HomePage.module.css";
+import PostCardLoading from "../../components/PostCard/Loading";
 
 function HomePage() {
   // This URL returns an array of posts previews
@@ -19,11 +20,7 @@ function HomePage() {
   }
   if (loading) {
     dataAvailable = false;
-    mainContent = <span>loading</span>;
-  }
-  if (!data) {
-    dataAvailable = false;
-    mainContent = <span>no posts</span>;
+    mainContent = <PostCardLoading />;
   }
 
   return (

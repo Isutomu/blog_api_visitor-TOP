@@ -10,7 +10,7 @@ function Hero() {
         <p className={styles.heroParagraph}>{heroParagraphs.paragraph1.text}</p>
         <p className={styles.heroParagraph}>{heroParagraphs.paragraph2.text}</p>
       </div>
-      <img className={styles.heroImage} src={imageReaper} alt="" />
+      <img className={styles.heroImage} src={imageReaper} alt=""></img>
     </header>
   );
 }
