@@ -8,7 +8,7 @@ export default async function fetchSignUp(userInfo) {
     },
   })
     .then((response) => {
-      if (response.status !== 200) throw new Error("User creation failed");
+      if (response.status !== 201) throw new Error("User creation failed");
       return response.json();
     })
     .then((json) => json)
