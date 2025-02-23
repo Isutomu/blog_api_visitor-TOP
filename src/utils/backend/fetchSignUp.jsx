@@ -1,5 +1,5 @@
 export default async function fetchSignUp(userInfo) {
-  const response = await fetch(`${import.meta.env.VITE_API_URL}/signUp`, {
+  const response = await fetch(`${import.meta.env.VITE_API_URL}/signup`, {
     mode: "cors",
     method: "POST",
     body: userInfo,
