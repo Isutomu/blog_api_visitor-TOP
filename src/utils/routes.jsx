@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
+import LogIn from "../components/LogIn/LogIn";
+import LogOut from "../components/LogOut/LogOut";
 import HomePage from "../pages/HomePage/HomePage";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import PostPage from "../pages/PostPage/PostPage";
@@ -15,6 +17,8 @@ const routes = createBrowserRouter(
     { path: "/posts/:postId", element: <PostPage /> },
     { path: "/tags/:tagName", element: <SearchResultPage /> },
     { path: "/signup", element: <SignUpPage /> },
+    { path: "/login", element: <LogIn /> },
+    { path: "/logout", element: <LogOut /> },
   ],
   { basename: "/blog_api_visitor-TOP/" }
 );

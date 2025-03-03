@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./Header.module.css";
-
-const linksList = [
-  { name: "github", url: "https://github.com/Isutomu", external: true },
-  { name: "about", url: "/about", external: false },
-  { name: "log in", url: "/login", external: false },
-  { name: "sign up", url: "/signup", external: false },
-];
+import isLogged from "../../utils/auth/isLogged";
 
 const NavLink = ({ link }) => {
   const element = link.external ? (
@@ -25,6 +19,22 @@ const NavLink = ({ link }) => {
 };
 
 export default function Header() {
+  let linksList = [];
+  if (isLogged()) {
+    linksList = [
+      { name: "github", url: "https://github.com/Isutomu", external: true },
+      { name: "about", url: "/about", external: false },
+      { name: "log out", url: "/logout", external: false },
+    ];
+  } else {
+    linksList = [
+      { name: "github", url: "https://github.com/Isutomu", external: true },
+      { name: "about", url: "/about", external: false },
+      { name: "log in", url: "/login", external: false },
+      { name: "sign up", url: "/signup", external: false },
+    ];
+  }
+
   return (
     <header className={styles.header}>
       <h1 className={styles.siteTitle}>
