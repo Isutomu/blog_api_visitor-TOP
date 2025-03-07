@@ -31,18 +31,19 @@ There is no particular reason why I chose this project to maintain besides this 
 - Add a "categories page" that contains all the tags that were used in posts and redirects upon click to a "search posts by tag" page (this last page was already implemented)
 - (Not priority) Expand the search feature to enable time period filtering
 - Add loading placeholder components (pages where feature was enabled are going to be listed below)
+  - ~~Homepage posts~~
 - Add error placeholder components (pages where feature was enabled are going to be listed below)
 - Add "no data" placeholder components (pages where feature was enabled are going to be listed below)
 - (Not priority) Add proper error handling for the application
 - Adjust (specially) image containers so that their sizes don't wildly change between the states "not loaded", "loaded" and "error" (pages where feature was enabled are going to be listed below)
 - (Really not a priority) Change visual style
 - (Not priority) Implement the states components (loading, error, no data) as a transition between pages feature (maybe even leave the original implementation but do this as an extra?)
-- Implement sign up available to all visitors
+- ~~Implement sign up available to all visitors~~
 - (Not priority) Allow users to sign up with external services (e.g. google)
 - (Not priority) Allow users to sign in with external services (e.g. google)
-- Implement login
-- Implement logout
-- Implement proper "session" expiration
+- ~~Implement login~~
+- ~~Implement logout~~
+- ~~Implement proper "session" expiration~~
 - Add in "login" a "reset password" feature
 - Allow users to comment on posts (the user must be logged in)
 - Show comments on the post (lazy loading?)
