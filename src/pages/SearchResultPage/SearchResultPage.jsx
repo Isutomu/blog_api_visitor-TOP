@@ -26,7 +26,7 @@ function SearchResultPage() {
     dataAvailable = false;
     mainContent = <span>no posts</span>;
   }
-  console.log(data);
+
   return (
     <>
       <Header />
