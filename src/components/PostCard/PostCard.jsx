@@ -11,8 +11,15 @@ function BulletPoint() {
 function PostCard({ post }) {
   return (
     <article className={styles.postArticle}>
-      <Link className={styles.postImageLink} to={`/posts/${post.id}`}>
-        <img className={styles.postImage} src={post.image} alt="" />
+      <Link
+        className={styles.postImageLink}
+        to={`/posts/${post.id}`}
+      >
+        <img
+          className={styles.postImage}
+          src={post.image}
+          alt=""
+        />
       </Link>
 
       <div className={styles.postPreviewContent}>

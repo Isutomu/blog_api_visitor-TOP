@@ -24,12 +24,14 @@ export default function Header() {
     linksList = [
       { name: "github", url: "https://github.com/Isutomu", external: true },
       { name: "about", url: "/about", external: false },
+      { name: "tags", url: "/tags", external: false },
       { name: "log out", url: "/logout", external: false },
     ];
   } else {
     linksList = [
       { name: "github", url: "https://github.com/Isutomu", external: true },
       { name: "about", url: "/about", external: false },
+      { name: "tags", url: "/tags", external: false },
       { name: "log in", url: "/login", external: false },
       { name: "sign up", url: "/signup", external: false },
     ];

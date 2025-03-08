@@ -6,6 +6,7 @@ import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import PostPage from "../pages/PostPage/PostPage";
 import SearchResultPage from "../pages/SearchResultPage/SearchResultPage";
 import SignUpPage from "../pages/SignUpPage/SignUpPage";
+import TagsPage from "../pages/TagsPage/TagsPage";
 
 const routes = createBrowserRouter(
   [
@@ -15,6 +16,7 @@ const routes = createBrowserRouter(
       errorElement: <PageNotFound />,
     },
     { path: "/posts/:postId", element: <PostPage /> },
+    { path: "/tags", element: <TagsPage /> },
     { path: "/tags/:tagName", element: <SearchResultPage /> },
     { path: "/signup", element: <SignUpPage /> },
     { path: "/login", element: <LogIn /> },
