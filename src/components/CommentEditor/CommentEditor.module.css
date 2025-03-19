@@ -1,0 +1,68 @@
+.form {
+  --limit-spacing: 5px;
+
+  padding: 0 var(--padding-lateral-base) 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: 500;
+  font-size: var(--text-lg);
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.textProgress {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.input {
+  outline: none;
+
+  min-height: 2.5rem;
+  padding: 0.375rem 0.75rem;
+
+  border: 1px solid var(--secondary);
+  border-radius: 0.5rem;
+
+  font-size: var(--text-base);
+
+  transition: border-color 0.25s ease-in-out;
+
+  field-sizing: content;
+
+  flex-grow: 1;
+}
+
+.input:focus {
+  border-color: var(--faded);
+}
+
+.textLimit {
+  position: absolute;
+  right: -5px;
+
+  padding-left: 0.25rem;
+  padding-top: 0.1rem;
+
+  border-radius: 5px;
+}
+
+.button {
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+.button:hover {
+  color: var(--accent);
+}
